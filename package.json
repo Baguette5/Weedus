@@ -1,0 +1,23 @@
+{
+  "name": "weedus",
+  "version": "1.0.0",
+  "description": "weedus gaming",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Baguette5/Weedus.git"
+  },
+  "author": "Baguette5",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Baguette5/Weedus/issues"
+  },
+  "homepage": "https://github.com/Baguette5/Weedus#readme",
+  "dependencies": {
+    "discord.js": "^14.11.0",
+    "dotenv": "^16.3.1"
+  }
+}

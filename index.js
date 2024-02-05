@@ -54,13 +54,13 @@ client.on(Events.InteractionCreate, async interaction => {
 		}
 	}
 });
+
+
+const {ActivityType } = require('discord.js');
+
 client.on("ready", () => {
     // Place your code here
-
-client.user.setActivity("ur mom", {
-	type: "STREAMING",
-	url: "https://www.twitch.tv/"
-  });
+	client.user.setPresence({ activities: [{ name: `You.`, type: ActivityType.Watching }], status: 'dnd', });
 });
 
 for (const folder of commandFolders) {
@@ -77,3 +77,7 @@ for (const folder of commandFolders) {
 		}
 	}
 }
+
+
+
+client.cooldowns = new Collection();
